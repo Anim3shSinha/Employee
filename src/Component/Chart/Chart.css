@@ -1,0 +1,30 @@
+/* CircularGauge.css */
+
+.circular-gauge {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  box-shadow: #333;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gauge-background {
+  fill: #e0e0e0; /* Background color of the gauge */
+}
+
+.gauge-foreground {
+  fill: #7fb7dc; /* Foreground color of the gauge */
+  transition: transform 1s ease-in-out; /* Animation duration and easing */
+  transform-origin: center center;
+}
+
+.gauge-text {
+  font-size: 20px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  fill: #333;
+}

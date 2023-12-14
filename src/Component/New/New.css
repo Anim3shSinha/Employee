@@ -1,0 +1,98 @@
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  margin-top: 5vh;
+  align-items: center;
+  min-height: 80vh;
+  min-width: 70%; /* Adjust for your needs */
+  flex-direction: column;
+}
+
+/* Title */
+h2 {
+  font-size: 18px;
+  color: #204d7e;
+  margin-bottom: 20px;
+}
+
+/* Form columns */
+.form-column {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+/* Labels */
+label {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+hr {
+  border: 1px solid #c93232;
+  margin: 20px 0; /* Add margin to space it out */
+}
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 80%;
+}
+
+/* Gender section */
+.gender-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Submit and reset buttons */
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+button[type="submit"] {
+  background-color: #204d7e;
+  color: #fff;
+}
+
+button[type="reset"] {
+  background-color: #ddd;
+  color: #333;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

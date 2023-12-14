@@ -1,0 +1,169 @@
+/* Landing.css */
+.navbar-custom {
+  background-color: #222334;
+  color: black;
+  height: 100px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 100%;
+  color: white;
+  font-family: sans-serif;
+}
+
+.A {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.B {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: wheat;
+}
+.navbar-brand {
+  font-family: cursive;
+  /* font-family: fantasy; */
+  animation: fadeInBounceScale 1.5s ease-in-out;
+}
+
+@keyframes fadeInBounceScale {
+  0%,
+  20% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.2);
+  }
+  80% {
+    transform: translateY(10px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #e4e4f4;
+  transform: scale(1.1);
+}
+
+.nav-link:last-child {
+  margin-left: 10vh;
+  background-color: indianred;
+  border-radius: 10px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero div:first-child {
+  animation: slideInLeft 1s ease-out;
+}
+
+.hero div:last-child {
+  animation: slideInRight 1s ease-out;
+}
+
+.hero {
+  width: 100%;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../../assests/hero.png);
+  background-size: cover;
+  height: 50vh;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#section1 {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
+  background-color: #dad8ef;
+  width: 100%;
+}
+
+.charts {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
